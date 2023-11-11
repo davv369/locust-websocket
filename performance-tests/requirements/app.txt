@@ -1,0 +1,6 @@
+python-decouple==3.8
+locust==2.15.1
+Faker==18.4
+websocket==0.2.1
+websocket-client==1.5.1
+socketio==0.2.1
