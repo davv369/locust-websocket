@@ -85,7 +85,7 @@ class GameUser(HttpUser):
             self.game_player1_id = player1_data.get("userId")
             if self.is_white:
                 self.move_payload1 = "Nf3"
-                move_url = f"https://game.preprod.checkmate.live/api/games/move"
+                move_url = config("MOVE_URL")
                 self.client.post(url=move_url,
                                  json={"move": {"id": self.game_id, "user_id": self.player_id,
                                                 "move": self.move_payload1}},
